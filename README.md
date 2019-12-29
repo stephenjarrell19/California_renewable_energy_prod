@@ -38,6 +38,9 @@ We compared our Forward Selection, LASSO, and Ridge Regression models to each ot
 
 ### Examples of final trained models:
 
+![final_models](https://user-images.githubusercontent.com/49171243/71551744-45762480-29a3-11ea-9cfa-d5ea340e7087.png)
+
+
 ### Conclusion:
 By predicting the energy output of renewable energy farms, it can help provide precision to balancing the output of alternative energy sources (such as coal) which have latency between start-time and energy output. Since the cost of renewable energy storage is the current limiting factor for growth, predictions on energy output by satellite weather data may allow for efficient use or optimization of energy storage and thus aid in the widespread adoption of solar and wind farms. By evaluating the prediction our best model provides, we can indicate that automatically generating accurate machine learning models that can predict solar energy output based on weather data is a promising area. We found that the best model from our project was the LASSO model with an MSE of 0.18389. We also identified the top 3 most critical model parameters are GHI (absolute t-value of  153.3), Clearsky GHI (abs t-value of 75.9) and Temperature (abs t-value of 63.13). We also found out that if we solely focused on creating a model based on one panel, the model prediction’s accuracy is a lot higher. Moving forward we hope we can revisit this model and further develop it to better accommodate better datasets, as our current model is not able to capture all the variance in performance across many different panels. And if we were to increase the project scope, we would likely train a model with many more panels (thousands plus) and introduce new and accurate predictors based on the short-term performance of the panel. 
 
