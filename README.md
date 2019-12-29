@@ -1,9 +1,4 @@
-# California_renewable_energy_prod
-Predicting solar and wind energy production.
-
-Predicting Solar Energy Output from Weather Data
-
-Xiangheng Chen, Natapong Stephen Jarrell, Tamuz Hod
+# Predicting Solar Energy Output from Weather Data
 
 
 ### Abstract: 
