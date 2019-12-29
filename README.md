@@ -34,6 +34,9 @@ Definition for DHI: “Diffuse Horizontal Irradiation is the amount of radiation
 The final forward selection model is heuristic, informing us of the sequentially best ith predictors, providing an efficient and practical model fit.  Using k-folds on the training data we found that we should use the top 16 predictors as this model had the lowest test MSE. This model captured 0.86% of the variance of our data(R^2). These 16 predictors are: “GHI + Temperature + ClearskyGHI + DewPoint + RelativeHumidity + CloudType6 + CloudType2 + Pressure + CloudType3 + PrecipitableWater + WindSpeed + CloudType4 + CloudType0 + SolarZenithAngle + DNI + ClearskyDNI”
 For the Ridge a Lasso models we used a similar approach. We split the training data into train and test sets using K-folds and compared the following alpha values: [1e-15, 1e-10, 1e-8, 1e-4, 1e-3, 40, 80, 160, 320, 640, 960, 1280,1920, 1560]. The alpha values with the lowest MSE were  960 for Ridge and 80 for Lasso. Below is the MSE plotted against values of log alpha. 
  
+ ![final_mse](https://user-images.githubusercontent.com/49171243/71551754-722a3c00-29a3-11ea-9ebf-9c6835697132.png)
+
+ 
 We compared our Forward Selection, LASSO, and Ridge Regression models to each other using the 2016 data. We found that the best model which performs bet on our text set is the LASSO model with its MSE value equal to 0.18389 and the second best is one of the Ridge regression with its MSE value equals to 0.2078, the Forward Selection model had an MSE of 0.212997. 
 
 ### Examples of final trained models:
